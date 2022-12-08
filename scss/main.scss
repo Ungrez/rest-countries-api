@@ -1,0 +1,21 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "typography";
+@import "../components/NavBar/NavBar";
+@import "../components/InputsHandle/InputsHandle";
+
+body {
+  min-height: 100vh;
+  transition: 0.4s;
+}
+
+body.--dark {
+  background-color: $very-dark-blue-dark-mode-background;
+  color: $very-dark-blue-light-mode-text;
+}
+
+body.--light {
+  background-color: $very-light-gray-light-mode-background;
+  color: $very-dark-blue-light-mode-text;
+}

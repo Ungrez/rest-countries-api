@@ -1,0 +1,30 @@
+@import url("../../scss/_variables.scss");
+#main_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  place-items: center;
+  background-color: white;
+  height: 10vh;
+  box-shadow: 0 0 10px -6px black;
+  transition: 0.5s;
+  &_logo {
+    font-weight: 800;
+  }
+  &_mode {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+    font-size: 13px;
+    place-items: center;
+    gap: 0 10px;
+    & img {
+      max-width: 18%;
+    }
+  }
+}
+#main_nav.--dark {
+  background-color: $dark-blue-dark-mode-elements;
+  color: $white-dark-mode-text-and-light-mode-elements;
+}
